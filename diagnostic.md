@@ -11,21 +11,21 @@ Record your responses inside the fenced code blocks below each question.
     the model and actions.
     ```
 
-1.  What is the command to generate a route named `boston` nested under
+2.  What is the command to generate a route named `boston` nested under
     `campus`?
 
     ```md
     ember g route campus/boston
     ```
 
-1.  Suppose you have a nested route at the URL `/campus/boston`. How would you
+3.  Suppose you have a nested route at the URL `/campus/boston`. How would you
     use the `link-to` helper to generate an appropriate link?
 
     ```md
   {{#link-to 'campus.boston'}}I'M IN LOVE WITH MASSACHUSETTS{{/link-to}}l
     ```
 
-1.  Explain **at least** two differences between the following two route
+4.  Explain **at least** two differences between the following two route
     definitions.
 
     ```js
@@ -41,7 +41,7 @@ Record your responses inside the fenced code blocks below each question.
     template, the second one is not a nested route and will not.
     ```
 
-1.  Suppose we have the following route definition:
+5.  Suppose we have the following route definition:
 
     ```js
     this.route('movie', { path: '/movies/:movie_id' }); // <= 👀 here
@@ -55,7 +55,7 @@ Record your responses inside the fenced code blocks below each question.
     {{#each model as |movie|}}), we would call this as {{movie.id}}.
     ```
 
-1.  Inside a template, how do we reference data provided by a Route?
+6.  Inside a template, how do we reference data provided by a Route?
 
     ```md
     We use the model - typically we're doing this in an
